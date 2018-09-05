@@ -1,0 +1,79 @@
+git checkout -b "bugfix/OP-62-Logs-without-tmk-to-debug-correctly"
+
+git add -A
+
+git commit -a -m "Logs fix to show tmk when the mpks are duplicated"
+
+git push //////-u origin bugfix/OP-62-Logs-without-tmk-to-debug-correctly
+
+git diff extractor/inventory_generators.py
+
+git commit -m "OP-NUM ETC"
+
+git reset extractor/inventory_archivers.py
+
+ sudo make test
+
+
+
+sudo docker exec -it matchmaker_extractor_1 bash
+
+
+ export COUCH_URL=https://next.matchmaker.thirstie.com:6984
+
+ python main.py scan --generate --tmk M4W7RZ
+
+
+  249  sudo mkvirtualenv
+  250  sudo pip install virtualenv
+  251  mkdir ~/.virtualenvs
+  252  sudo pip install virtualenvwrapper
+  253  export WORKON_HOME=~/.virtualenvs
+  254  . /usr/local/bin/virtualenvwrapper.sh
+  255  sh /usr/local/bin/virtualenvwrapper.sh
+  256  ls /usr/local/bin/virtualenvwrapper.sh
+  257  find "/usr/local/bin/virtualenvwrapper.sh"
+  258  find "/usr/local/bin/"
+  259  ls /
+  260  mkvirtualenv myawesomeproject
+  261  env
+  262  lsb_release -a 
+  263  sudo pip3 install virtualenvwrapper
+  264  sudo apt-get install python3-pip
+  265  sudo pip3 install virtualenvwrapper
+  266  mkdir ~/.virtualenvs
+  267  export WORKON_HOME=~/.virtualenvs
+  268  ls
+  269  VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3' # This needs to be placed before the virtualenvwrapper command
+  270  VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
+  271  ~/.bashrc
+  272  vi ~/.bashrc 
+  273  vim ~/.bashrc 
+  274  sudo apt install vim 
+  275  vim ~/.bashrc 
+  276  grep -iR "InvalidInventoryFileException" extractor
+  277  grep -iR "InvalidInventoryFileException" Escritorio/matchmaker/extractor/
+  278  ps -ef
+  279  mkvirtualenv matchmaker
+  280  pip install pandas
+  281  pip install ipython
+  282  ipython
+
+
+
+
+
+
+
+pf=pd.read_csv("/home/usuario/Descargas/ProductExport-5.csv")
+
+df=pf.duplicated()    
+
+df.sort_values()    
+
+df=pf.duplicated(subset=["1","Name"])    
+
+
+
+
+
